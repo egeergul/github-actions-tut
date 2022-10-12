@@ -6,8 +6,8 @@ on:
   #- cron: '2-51 * * * *' 
 
 env:
-  DAY_OF_WEEK: Monday
-jobs: 
+   DAY_OF_WEEK: Monday
+ jobs: 
   Explore-GitHub-Actions:
       runs-on: ubuntu-latest
       env:
