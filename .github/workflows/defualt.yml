@@ -1,9 +1,9 @@
 name: Default YML File
 run-name: running ${{github.event.head_commit.message}}
 on: 
-  #[push, workflow_dispatch]
-  schedule:
-  - cron: '2-51 * * * *' 
+  [push, workflow_dispatch]
+  #schedule:
+  #- cron: '2-51 * * * *' 
 
 env:
   DAY_OF_WEEK: Monday
