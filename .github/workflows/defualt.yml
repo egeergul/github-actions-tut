@@ -3,7 +3,7 @@ run-name: running ${{github.event.head_commit.message}}
 on: 
   #[push, workflow_dispatch]
   schedule:
-  - cron: '10-50 18-23 * * *' 
+  - cron: '2/1 * * * *' 
 
 env:
   DAY_OF_WEEK: Monday
