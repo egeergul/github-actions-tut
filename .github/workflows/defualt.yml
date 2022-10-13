@@ -28,13 +28,12 @@ jobs:
       - name: condition 2
         if: runner.os != 'Windows'
         run: echo "The operating system on the runner is not Windows, it's $RUNNER_OS."
-    
+
   stall:
-    example_matrix:
-      strategy:
-        matrix:
-          version: [10, 12, 14]
-          os: [ubuntu-latest, windows-latest, macos-latest]
+    strategy:
+      matrix:
+        version: [10, 12, 14]
+        os: [ubuntu-latest, windows-latest, macos-latest]
     runs-on: ${{ matrix.os }}
     steps:
       - name: condition 1
@@ -43,4 +42,3 @@ jobs:
       - name: condition 2
         if: runner.os != 'Windows'
         run: echo "The operating system on the runner is not Windows, it's $RUNNER_OS."
-    
