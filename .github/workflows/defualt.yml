@@ -32,9 +32,10 @@ jobs:
   stall:
     strategy:
       matrix:
-        version: [10, 12, 14]
+        version: [8,9,10,11, 12,13, 14]
         os: [ubuntu-latest, windows-latest, macos-latest]
     runs-on: ${{ matrix.os }}
+    timeout: 1
     steps:
       - name: condition 1
         if: runner.os == 'Windows'
@@ -42,3 +43,6 @@ jobs:
       - name: condition 2
         if: runner.os != 'Windows'
         run: echo "The operating system on the runner is not Windows, it's $RUNNER_OS."
+      - name: log
+        run: echo "stalling ${{matrix.os}}"
+        run: echo "stalling ${{matrix.version}}"
