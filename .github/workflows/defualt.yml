@@ -35,7 +35,7 @@ jobs:
         version: [8,9,10,11, 12,13, 14]
         os: [ubuntu-latest, windows-latest, macos-latest]
     runs-on: ${{ matrix.os }}
-    timeout: 1
+    timeout-minutes: 1
     steps:
       - name: condition 1
         if: runner.os == 'Windows'
