@@ -45,4 +45,5 @@ jobs:
         run: echo "The operating system on the runner is not Windows, it's $RUNNER_OS."
       - name: log
         run: echo "stalling ${{matrix.os}}"
+      - name: log 2
         run: echo "stalling ${{matrix.version}}"
