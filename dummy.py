@@ -1,1 +1,6 @@
 print("this is a file at main ilerl")
+print("Özgürün delisi")
+print("Özgürün delisi")
+print("Özgürün delisi3")
+print("Özgürün delisi4 ")
+print("this is a file at main ilerl 2")
