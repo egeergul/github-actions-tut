@@ -1,7 +1,7 @@
-name: Default YML File
+name: Second yml file
 run-name: second wf, ${{github.event.head_commit.message}}
 on:
-  [push ]
+  #[push ]
   #workflow_dispatch
   #schedule:
   #- cron: '2-51 * * * *'
