@@ -6,3 +6,5 @@ def test1():
     expectedDefinition = 3 
     expectedDefinition2 = 3 
     assert actualDefinition == expectedDefinition or actualDefinition == expectedDefinition2
+    
+    
